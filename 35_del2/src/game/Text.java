@@ -2,9 +2,9 @@ package game;
 
 public class Text {
 	static String enterName1 = "Player 1 enter name";
-	static String enterName2 = "PLayer 2 enter name";
+	static String enterName2 = "Player 2 enter name";
 	
-	static String roll = " press [Enter] to roll dice";	
+	static String roll = " press OK to roll dice";	
 	
 	static String winner = " wins the game!";
 	
