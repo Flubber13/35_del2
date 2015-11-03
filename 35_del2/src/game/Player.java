@@ -2,11 +2,24 @@ package game;
 
 public class Player {
 
-	static String player1; 
-	static String player2;
+	private String name;
+	private BankAccount account;
+
+	public Player(int startBalance) {
+		this.account = new BankAccount(startBalance);
+	}
+
+
+	public BankAccount getAccount() {
+		return account;
+	}
 	
-	static int p1Balance;
-	static int p2Balance;
-	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
 	
 }

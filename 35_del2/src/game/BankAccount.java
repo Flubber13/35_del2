@@ -4,7 +4,7 @@ public class BankAccount {
 	
 	private int balance;
 	
-	public void bankAccount(int balance){
+	public BankAccount(int balance){
 		this.balance = balance;
 	}
 	
@@ -14,11 +14,11 @@ public class BankAccount {
 	}
 	
 	
-	public int addBalance(int balance){
-		if (this.balance+balance<0)
+	public int addBalance(int input){
+		if (this.balance + input < 0)
 			this.balance = 0;
-		else this.balance = this.balance+balance;
-		return balance;
+		else this.balance = this.balance + input;
+		return input;
 	}
 	
 	

@@ -2,19 +2,26 @@ package game;
 
 public class Dice {
 
-	int lastRoll; 
+	private int lastRoll; 
 	
-	int sides;
+	private int sides;
 	
-	public Dice(int i){ 
-		sides = i;
+	public Dice(int sides){ 
+		this.sides = sides;
 	}
 	
 	public int roll(){
-		lastRoll = (int) Math.floor( (Math.random())*sides ) +1;
+		setLastRoll((int)Math.floor( (Math.random())*sides ) +1);
+		return getLastRoll();
+	}
+	
+	public int getLastRoll(){
 		return lastRoll;
 	}
 	
+	public void setLastRoll(int lastRoll){
+		this.lastRoll = lastRoll;
+	}
 	
 	
 }
