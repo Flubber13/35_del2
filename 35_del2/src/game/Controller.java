@@ -22,11 +22,13 @@ public class Controller {
 
 		GUI.addPlayer(player1.getName(), player1.getAccount().getBalance());
 		GUI.addPlayer(player2.getName(), player2.getAccount().getBalance());
+		
 		while(player1.getAccount().getBalance()<3000 && player2.getAccount().getBalance()<3000){
 			playerTurn(player1);
 			playerTurn(player2);
 		}
 
+		
 		if (player1.getAccount().getBalance() >= 3000 && player2.getAccount().getBalance() < 3000)
 			GUI.showMessage(">>>" + player1.getName() + Text.winner + "<<<");
 
