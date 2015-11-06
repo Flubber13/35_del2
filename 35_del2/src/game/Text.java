@@ -5,7 +5,7 @@ public class Text {
 	static String enterName2 = "Spiller 2 indtast navn";
 	
 	static String roll = " Tryk OK for at kaste terninger";	
-	
+	static String tie = " vinder begge spillet!";
 	static String winner = " vinder spillet!";
 	
 	static String field2 = " landede på: Tårnet - 'Rapunzel, Rapunzel, lad dit hår falde ned', lyder det fra jorden udenfor vinduet. 'Et øjeblik', svarer du i en knap nok overbevisende falsetstemme, mens du fæstner din blonde paryk og giver kneblen et par øve-sving. Et par minutter senere smider du den bevidstløse eventyrer på den støt stigende bunke af samme i hjørnet, og stikker hans penge i lommen. +250.";

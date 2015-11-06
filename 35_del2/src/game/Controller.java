@@ -33,10 +33,10 @@ public class Controller {
 			GUI.showMessage(">>>" + player1.getName() + Text.winner + "<<<");
 
 		if (player2.getAccount().getBalance() >= 3000 && player1.getAccount().getBalance() < 3000)
-			GUI.showMessage(">>>" + player2.getName() + " wins the game!<<<");
+			GUI.showMessage(">>>" + player2.getName() + Text.winner + "<<<");
 
 		else 
-			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + " Tied the game!<<<");
+			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + Text.tie +"<<<");
 
 	}
 
