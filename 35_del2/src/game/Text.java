@@ -67,7 +67,7 @@ public class Text {
 	static String f112 = "Hullet: Då vågner i en grøft uden din pung. Igen. -50";
 	static String f113 = "Hullet: Da du er ude at gå, falder du i staver over den betagende dame, der går foran dig. Med øjne rettet mod bedre ser du ikke det store mudderhul på vejen. Du lander pladask med næsen i mudderet. Damen vender sig om og griner af dig. Flot. -50";
 	
-	static String f121 = "Guldminen: Bagholdsangreb! Den fesne troldkarl Safronmand's hærgende hårker vælter frem og hele din eventyrergruppe går bravt til modangreb. Undtagen dig. Du træder snarrådigt ind bag et træ og gemmer. Da slaget er ovre træder du frem og går i gang med at lænse dine døde kammerater for værdier. +650";
+	static String f121 = "Guldminen: Bagholdsangreb! Den fesne troldkarl Safronmand's hærgende hårker vælter frem og hele din venner går bravt til modangreb. Undtagen dig. Du træder snarrådigt ind bag et træ og gemmer. Da slaget er ovre træder du frem og går i gang med at lænse dine døde kammerater for værdier. +650";
 	static String f122 = "Guldminen: Du franarrer de syv små dværge de lokale minerettigheder i den fortryllede skov. +650";
 	static String f123 = "Guldminen: Du opfinder den dybe tallerken, bedst som du klipper tånegle. Du bliver rig! + 650";
 
