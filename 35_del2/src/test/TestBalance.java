@@ -1,5 +1,6 @@
 package test;
 
+
 import org.junit.Assert;
 import org.junit.Before;
 
@@ -9,7 +10,6 @@ public class TestBalance {
 
 	private Player player;
 
-	
 	@Before
 	public void setUp() throws Exception {
 		player = new Player(1000);
