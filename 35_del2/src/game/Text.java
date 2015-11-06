@@ -4,12 +4,11 @@ import java.util.Random;
 
 public class Text {
 
-	static String enterName1 = "Player 1 enter name";
-	static String enterName2 = "Player 2 enter name";
+	static String enterName1 = "Spiller 1 indtast navn";
+	static String enterName2 = "Spiller 2 indtast navn";
 
-	
 	static String roll = " Tryk OK for at kaste terninger";	
-	static String tie = " vinder begge spillet!";
+
 	static String winner = " vinder spillet!";
 
 	
