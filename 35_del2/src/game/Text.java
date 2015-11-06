@@ -18,10 +18,10 @@ public class Text {
 		return randomNum;
 	}
 
-	//The matrix "field" consists of 12 fields, with 4 texts each = field [4][12.
+	//The matrix "field" consists of 12 fields, with 4 texts each = field [4][12].
 	static String[][] field = {
 			//field0 and field1 -- EMPTY
-			{"", "", "", ""}, {"", "", "", ""},
+			{"", "", ""}, {"", "", ""},
 			//field2
 			{" landede på: Tårnet - 'Rapunzel, Rapunzel, lad dit hår falde ned', lyder det fra jorden udenfor vinduet. 'Et øjeblik',svarer du i en knap nok overbevisende falsk stemme, mens du fæstner din blonde tykke paryk og giver kneblen et par øve-sving. Et par minutter senere smider du den bevidstløse eventyrer på den støt stigende bunke af samme i hjørnet, og stikker hans penge i lommen. +250.", 
 			 " landede på tower 2", "landede på tower 3"},
