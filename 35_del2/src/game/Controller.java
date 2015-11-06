@@ -35,7 +35,7 @@ public class Controller {
 		if (player1.getAccount().getBalance() >= 3000 && player2.getAccount().getBalance() < 3000)		//player 1 wins
 			GUI.showMessage(">>> " + player1.getName() + Text.winner + " <<<");
 
-		if (player2.getAccount().getBalance() >= 3000 && player1.getAccount().getBalance() < 3000)		//player 2 wins
+		else if (player2.getAccount().getBalance() >= 3000 && player1.getAccount().getBalance() < 3000)	//player 2 wins
 			GUI.showMessage(">>> " + player2.getName() + Text.winner+ " <<<");
 
 		else 
