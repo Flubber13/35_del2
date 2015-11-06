@@ -5,6 +5,7 @@ public class Player {
 	private String name;
 	private BankAccount account;
 
+	//definition of player
 	public Player(int startBalance) {
 		this.account = new BankAccount(startBalance);
 	}

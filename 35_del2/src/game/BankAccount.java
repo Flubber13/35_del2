@@ -4,15 +4,18 @@ public class BankAccount {
 	
 	private int balance;
 	
+	//definition of a bank account
 	public BankAccount(int balance){
 		this.balance = balance;
 	}
 	
-	
+	//Method to get the balance
 	public int getBalance(){
 		return balance;
 	}
 	
+	/*The following method addBalance adds the points from the field which the player landed on. 
+	  If the balance becomes negative, after the addition, the balance will be set to 0.*/
 	
 	public int addBalance(int input){
 		if (this.balance + input < 0)

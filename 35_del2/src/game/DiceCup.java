@@ -1,10 +1,12 @@
 package game;
 
 public class DiceCup {
-
+	
+	//The following creates two dice with six sides.
 	private Dice die1 = new Dice(6); 
 	private Dice die2 = new Dice(6);
 	
+	//this method rolls die 1 and die 2 and sums the outcome
 	public int roll(){
 		getDie1().roll();
 		getDie2().roll();
