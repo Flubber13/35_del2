@@ -36,7 +36,7 @@ public class Controller {
 			GUI.showMessage(">>>" + player2.getName() + Text.winner+ "<<<");
 
 		else 
-			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + Text.tie + "<<<");
+			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + " Tied the game!<<<");
 
 	}
 
@@ -47,7 +47,7 @@ public class Controller {
 			GUI.showMessage(player.getName() + Text.roll );
 			fieldNo = dicecup.roll();
 			GUI.setDice(dicecup.getDie1().getLastRoll(), dicecup.getDie2().getLastRoll());
-			GUI.showMessage(player.getName() + Text.field[fieldNo][Text.randomInteger(0,4)]);
+			GUI.displayChanceCard(player.getName() + Text.field[fieldNo][Text.randomInteger(0,2)]);
 			player.getAccount().addBalance(Fields.field[fieldNo]);
 
 			GUI.setBalance(player.getName(), player.getAccount().getBalance());
