@@ -12,6 +12,8 @@ public class Text {
 	static String landedOn = " landede på:";
 
 	static String winner = " vinder spillet!";
+	
+	static String tie = " vinder begge to!";
 
 	
 	public static int randomInteger(int min, int max) {
