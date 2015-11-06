@@ -24,7 +24,7 @@ public class Controller {
 		GUI.addPlayer(player2.getName(), player2.getAccount().getBalance());
 		
 		while(player1.getAccount().getBalance()<3000 && player2.getAccount().getBalance()<3000){
-			playerTurn(player1);
+			playerTurn(player1); 
 			playerTurn(player2);
 		}
 
@@ -36,7 +36,7 @@ public class Controller {
 			GUI.showMessage(">>>" + player2.getName() + Text.winner+ "<<<");
 
 		else 
-			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + " Tied the game!<<<");
+			GUI.showMessage(">>>" + player1.getName() + " and " + player2.getName() + Text.tie + "<<<");
 
 	}
 
@@ -47,8 +47,7 @@ public class Controller {
 			GUI.showMessage(player.getName() + Text.roll );
 			fieldNo = dicecup.roll();
 			GUI.setDice(dicecup.getDie1().getLastRoll(), dicecup.getDie2().getLastRoll());
-			GUI.displayChanceCard(Text.field[fieldNo][Text.randomInteger(0,2)]);
-			GUI.showMessage(player.getName() + Text.landedOn);
+			GUI.displayChanceCard(player.getName() + Text.field[fieldNo]);
 			player.getAccount().addBalance(Fields.field[fieldNo]);
 
 			GUI.setBalance(player.getName(), player.getAccount().getBalance());
