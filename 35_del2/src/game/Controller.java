@@ -47,7 +47,7 @@ public class Controller {
 			GUI.showMessage(player.getName() + Text.roll );
 			fieldNo = dicecup.roll();
 			GUI.setDice(dicecup.getDie1().getLastRoll(), dicecup.getDie2().getLastRoll());
-			GUI.showMessage(player.getName() + Text.field[fieldNo]);
+			GUI.showMessage(player.getName() + Text.field[fieldNo][Text.randomInteger(0,4)]);
 			player.getAccount().addBalance(Fields.field[fieldNo]);
 
 			GUI.setBalance(player.getName(), player.getAccount().getBalance());
