@@ -10,11 +10,6 @@ public class Text {
 
 	static String winner = " wins the game!";
 
-
-	//	static int min = 0;
-	//	static int max = 4;
-	//	static int j = min + ((int)Math.floor( (Math.random())*max ) +1);
-
 	
 	public static int randomInteger(int min, int max) {
 		Random rand = new Random();
