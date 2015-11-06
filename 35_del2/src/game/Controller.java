@@ -4,10 +4,6 @@ import desktop_resources.GUI;
 
 public class Controller {
 
-	public static void main(String[] args) {
-		new Controller().run();
-	}
-
 	Player player1, player2;
 	DiceCup dicecup;
 
