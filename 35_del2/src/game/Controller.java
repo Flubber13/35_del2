@@ -28,22 +28,24 @@ public class Controller {
 			playerTurn(player2);
 		}
 
-		/*If one of the player's balance exceeds 3000 the player will win.
-		If both player's balance exceeds 3000 in the same round it is a tie. */
-		if (player1.getAccount().getBalance() >= 3000 && player2.getAccount().getBalance() < 3000)			//player 1 wins
-			GUI.showMessage(">>>" + player1.getName() + Text.winner + "<<<");
+		/* The following lines of code determines the winner of the game
+		If only one player's balance exceeds 3000, in the last round, that player will win.
+		If both player balances exceeds 3000 in the last round, it is a tie. */
+		
+		if (player1.getAccount().getBalance() >= 3000 && player2.getAccount().getBalance() < 3000)		//player 1 wins
+			GUI.showMessage(">>> " + player1.getName() + Text.winner + " <<<");
 
-		if (player2.getAccount().getBalance() >= 3000 && player1.getAccount().getBalance() < 3000)			//player 2 wins
-			GUI.showMessage(">>>" + player2.getName() + Text.winner+ "<<<");
+		if (player2.getAccount().getBalance() >= 3000 && player1.getAccount().getBalance() < 3000)		//player 2 wins
+			GUI.showMessage(">>> " + player2.getName() + Text.winner+ " <<<");
 
 		else 
-			GUI.showMessage(">>>" + Text.tie + "<<<");	//its a tie
+			GUI.showMessage(">>> " + Text.tie + " <<<");												//its a tie
 
 	}
 
-	/*Method for every players turn.
-	The random integer defines which text is printed for 
-	the corresponding field. This is because there are three different "texts" for every field.
+	/*Method for the player turn
+	The random integer defines which of the three texts are printed for the corresponding field. 
+	This is because there are three different "texts" for every field.
 	Every field has a corresponding amount of points which is added to the players balance.
 	The method loops if the player rolls 10 (to give said player an extra turn).
 	 */
